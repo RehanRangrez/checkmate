@@ -11,6 +11,13 @@ $yellow: #ffffff;
 $black: #010101;
 $white: #fdfdfd;
 
+// new
+
+$peach:#FFF0F4;
+$darkpeach:#ecced5;
+$bluetext:#182A88;
+$lightbgforoptions:#F3F5F9;
+
 
 * {
   margin: 0;
@@ -51,6 +58,7 @@ header {
     .name {
       font-family: $josefin;
       font-size: 600;
+      color: $bluetext;
       font-size: 32px;
     }
   }

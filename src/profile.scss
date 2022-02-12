@@ -10,6 +10,14 @@ $yellow: #ffc300;
 $black: #010101;
 $white: #fdfdfd;
 
+// new
+$peach: #fff0f4;
+$darkpeach: #ecced5;
+$bluetext: #182a88;
+$lightbgforoptions: #f3f5f9;
+$btnskyblue: #35c0d5;
+$warningred: #f72585;
+
 * {
   margin: 0;
   padding: 0;
@@ -22,10 +30,19 @@ $white: #fdfdfd;
 .profile-section {
   width: 100%;
   padding: 40px 100px;
-  .profile-head {
-    font-family: $josefin;
-    font-size: 34px;
+  span {
+    .profile-head {
+      font-family: $josefin;
+      font-size: 34px;
+      display: inline;
+    }
+    .edit {
+      display: inline-block;
+      margin-left: 5px;
+      cursor: pointer;
+    }
   }
+
   .profile-detail-container {
     width: 100%;
     display: flex;
@@ -34,21 +51,93 @@ $white: #fdfdfd;
     margin-top: 50px;
     height: 300px;
     .profile-details {
-      border-left: 2px solid $black;
-      padding-left: 20px;
-      width: 40%;
-      p {
-        font-family: $roboto;
-        font-size: 24px;
-        color: $black;
-        margin-top: 20px;
+      width: 50%;
+      // p {
+      //   font-family: $roboto;
+      //   font-size: 24px;
+      //   color: $black;
+      //   margin-top: 20px;
+      // }
+      form {
+        .input-div {
+          border: 1px solid $lightbgforoptions;
+          background-color: $lightbgforoptions;
+          width: 350px;
+          // height: 50px;
+          margin: 10px 0;
+          border-radius: 5px;
+          padding: 3px 10px;
+          label {
+            font-family: $josefin;
+            font-size: 10px;
+            display: block;
+            opacity: 0.8;
+            color: $bluetext;
+          }
+          input {
+            background-color: transparent;
+            outline: none;
+            border: none;
+            font-family: $roboto;
+            font-weight: 400;
+            color: $black;
+            margin-top: 5px;
+            width: 100%;
+          }
+
+          select {
+            background-color: transparent;
+            width: 100%;
+            border: none;
+            margin-top: 5px;
+            font-family: $roboto;
+            font-weight: 500;
+            color: $black;
+          }
+        }
+        .submit-btn {
+          border: none;
+          -webkit-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+          -moz-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+          -ms-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+          -o-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+          transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+          display: block;
+          margin-top: 30px;
+          max-width: 180px;
+          cursor: pointer;
+          text-decoration: none;
+          border-radius: 10px;
+          padding: 15px 30px;
+          color: $bluetext;
+          background-color: $white;
+          // color: rgba(30, 22, 54, 0.6);
+          // box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+          box-shadow: $bluetext 0 0px 0px 2px inset;
+          font-family: $montserrat;
+          &:hover {
+            color: rgb(255, 255, 255);
+            box-shadow: $bluetext 0 80px 0px 2px inset;
+          }
+        }
+        .warning-text {
+          display: block;
+          font-family: $roboto;
+          font-weight: 300;
+          font-size: 12px;
+          text-align: center;
+          color: $warningred;
+          margin-top: 10px;
+        }
       }
     }
     .profile-pic-container {
-      width: 60%;
+      width: 50%;
       display: flex;
       align-items: flex-start;
       justify-content: center;
+      position: relative;
+      top: 60px;
       .pic-container {
         width: 200px;
         height: 200px;
@@ -64,9 +153,19 @@ $white: #fdfdfd;
 @media only screen and (max-width: 768px) {
   .profile-section {
     padding: 30px 70px;
-    .profile-head {
-      font-size: 26px;
+    span {
+      .profile-head {
+        font-size: 26px;
+      }
+      .edit {
+        width: 20px;
+        height: 20px;
+        img {
+          width: 100%;
+        }
+      }
     }
+
     .profile-detail-container {
       .profile-details {
         width: 60%;
@@ -111,40 +210,53 @@ $white: #fdfdfd;
   }
 }
 
+@media only screen and (max-width: 426px) {
+  .profile-section {
+    padding: 20px 15px;
 
-
-
-@media only screen and (max-width: 426px){
-
-.profile-section{
-  padding: 20px 15px;
-  .profile-head{
-    font-size: 22px;
-  }
-  .profile-detail-container{
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-    margin-top: 25px;
-    height: auto;
-    .profile-details{
-      width: 100%;
-      margin-top: 40px;
-      p{
-        font-size: 16px;
-        margin-top: 50px;
+    span {
+      .profile-head {
+        font-size: 22px;
+      }
+      .edit {
+        width: 18px;
+        margin-left: 3px;
+        height: 18px;
+        img {
+          width: 100%;
+        }
       }
     }
-    .profile-pic-container{
-      width: 100%;
-      padding: 10px;
-      .pic-container{
-        width: 100px;
-        height: 100%;
+
+    .profile-detail-container {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0px;
+      height: auto;
+      .profile-details {
+        width: 100%;
+        // margin-top: 40px;
+        p {
+          font-size: 16px;
+          margin-top: 50px;
+        }
+        form{
+          .input-div{
+            width: 300px ;
+          }
+        }
+      }
+      .profile-pic-container {
+        width: 100%;
+        padding: 10px;
+        position: static;
+        top: 0;
+        .pic-container {
+          width: 100px;
+          height: 100%;
+        }
       }
     }
   }
-}
-
-
 }

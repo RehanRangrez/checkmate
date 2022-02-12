@@ -13,7 +13,7 @@
     <header>
         <div class="logo">
           <img src="/assets/images/logo.svg" alt="" />
-          <h1 class="name">Lorem</h1>
+          <h1 class="name">Psylog</h1>
         </div>
       </header>
     <nav>
@@ -25,13 +25,51 @@
         </ul>
     </nav>
     <section class="profile-section">
-        <h1 class="profile-head">Profile</h1>
+        <span>
+            <h1 class="profile-head">Profile</h1>
+            <span class="edit">
+                <img src="/assets/images/edit.svg" alt="">
+            </span>
+        </span>
+        
         <div class="profile-detail-container">
             <div class="profile-details">
-                <p class="name">Name: <span>Rehan Rangrez</span></p>
-                <p class="email">Email: <span>rehanrangrez@yahoo.com</span></p>
-                <p class="phone">Phone: <span>+91 9167945558</span></p>
-                <p class="gender">Gender: <span>Male</span></p>
+                <form action="">
+                    <div class="input-div">
+                      <label for="first-name">First Name</label>
+                      <input type="text" class="first-name" id="first-name" />
+                    </div>
+                    <div class="input-div">
+                      <label for="last-name">Last Name</label>
+                      <input type="text" class="last-name" id="last-name" />
+                    </div>
+                    <div class="input-div">
+                      <label for="email">Email address</label>
+                      <input type="email" class="email" id="email" />
+                    </div>
+            
+                    <div class="input-div">
+                      <label for="email">Country</label>
+                      <select id="country" name="country">
+                        <option value=""></option>
+                        <option value="Afganistan">Afghanistan</option>                        
+                      </select>
+                    </div>
+                    <div class="input-div">
+                        <label for="gender">Gender</label>
+                        <select id="gender" name="gender">
+                            <option value="male"></option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="prefernottosay">Prefer not to say</option>
+                          </select>          </div>
+                    <div class="input-div">
+                      <label for="password">Password</label>
+                      <input type="password" class="password" id="password" />
+                    </div>
+                    <input type="submit" class="submit-btn" value="Save">
+                  </form>
+                <!-- ************* -->
             </div>
             <div class="profile-pic-container">
                 <div class="pic-container">

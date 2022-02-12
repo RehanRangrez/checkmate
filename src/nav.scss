@@ -9,28 +9,29 @@ $white: #ffffff;
 $peach:#FFF0F4;
 $darkpeach:#ecced5;
 $bluetext:#182A88;
-
+$bgpurple:#ecd0ff;
 
 
 nav {
-  background-color: $peach;
+  // background-color: $peach;
+  background-color: $white;
   position: fixed;
   z-index: 999;
-  right: 50px;
-  bottom: 120px;
-  height: 250px;
-  width: 60px;
-  //   box-shadow: 7px 0px 4px rgba(0, 0, 0, 0.06),
-  //     2px 3px 15px -5px rgba(0, 0, 0, 0.31);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-  border-radius: 12px;
+  right: 70px;
+  top: 40px;
+  width: 400px;
+  height: 50px;
+  // box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  // box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px; 
+   border-radius: 12px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
   ul {
     list-style-type: none;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    flex-direction: column;
+    flex-direction: row;
     li {
       display: flex;
       align-items: center;
@@ -39,7 +40,7 @@ nav {
         width: 35px;
         height: 32px;
         border-radius: 50%;
-        background-color: $darkpeach;
+        background-color: $bgpurple;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -75,9 +76,12 @@ nav{
   nav {
     width: 90%;
     height: 60px;
-    bottom: 20px;
+    bottom: 20px ;
+    top: 90%;
     right: 50%;
     transform: translate(50%, 0%);
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px; 
+
     ul {
       flex-direction: row;
     }

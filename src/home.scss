@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Montserrat+Alternates:wght@300;400&family=Roboto+Slab:wght@300;400;500&display=swap");
+// font Variables
+$josefin: "Josefin Sans", sans-serif;
+$montserrat: "Montserrat Alternates", sans-serif;
+$roboto: "Roboto Slab", serif;
+
+// color variables
+$blue: #034ffd;
+$yellow: #ffffff;
+// $yellow: #ffc300;
+$black: #010101;
+$white: #fdfdfd;
+
+// new
+$peach: #fff0f4;
+$darkpeach: #ecced5;
+$bluetext: #182a88;
+$lightbgforoptions: #f3f5f9;
+$btnskyblue: #35c0d5;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+
+.home-section {
+  width: 100%;
+  padding: 40px 100px;
+  .home-quote {
+    .quote-text {
+      font-family: $josefin;
+      font-size: 60px;
+      margin-top: 30px;
+      
+    }
+    .quote-author {
+      font-family: $montserrat;
+      font-weight: 300;
+      font-size: 22px;
+      color: $bluetext;
+      margin-top: 10px;
+    }
+  }
+  .tagline{
+    font-family: $roboto;
+    font-weight: 400;
+    font-size: 24px;
+    margin-top: 25px;
+  }
+
+  //
+  a {
+    -webkit-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+    -moz-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+    -ms-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+    -o-transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+    transition: all 200ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+    display: block;
+    margin-top: 30px ;
+    max-width: 180px;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 20px 30px;
+  }
+
+  a.start {
+    color: $bluetext;
+    // color: rgba(30, 22, 54, 0.6);
+    // box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+    box-shadow: $bluetext 0 0px 0px 2px inset;
+    font-family: $montserrat;
+  }
+
+  a.start:hover {
+    color: rgb(255, 255, 255);
+    box-shadow: $bluetext 0 80px 0px 2px inset;
+  }
+  //
+}
+
+@media only screen and (max-width: 768px) {
+  .home-section {
+    .home-quote {
+      .quote-text {
+        font-size: 40px;
+      }
+      .quote-author {
+        font-size: 16px;
+      }
+    }
+    .tagline{
+        font-size: 16px;
+    }
+    .start {
+      margin: 25px 0;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 426px) {
+.home-section{
+    padding: 5px 30px;
+    .home-quote{
+        .quote-text{
+            font-size: 40px;
+        }
+
+    }
+    .tagline{
+        margin-top: 20px;
+
+    }
+    .start{
+        margin-top: 20px;
+    }
+
+}
+
+
+}
