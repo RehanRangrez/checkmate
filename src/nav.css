@@ -1,5 +1,5 @@
 nav {
-  background-color: #fdfdfd;
+  background-color: #FFF0F4;
   position: fixed;
   z-index: 999;
   right: 50px;
@@ -45,7 +45,7 @@ nav ul li span {
   width: 35px;
   height: 32px;
   border-radius: 50%;
-  background-color: #010101;
+  background-color: #ecced5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

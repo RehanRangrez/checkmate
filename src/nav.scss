@@ -2,10 +2,18 @@
 $blue: #034ffd;
 $yellow: #ffc300;
 $black: #010101;
-$white: #fdfdfd;
+$white: #ffffff;
+
+// new
+
+$peach:#FFF0F4;
+$darkpeach:#ecced5;
+$bluetext:#182A88;
+
+
 
 nav {
-  background-color: $white;
+  background-color: $peach;
   position: fixed;
   z-index: 999;
   right: 50px;
@@ -31,7 +39,7 @@ nav {
         width: 35px;
         height: 32px;
         border-radius: 50%;
-        background-color: $black;
+        background-color: $darkpeach;
         display: flex;
         align-items: center;
         justify-content: center;
