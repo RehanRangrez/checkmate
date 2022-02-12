@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Montserrat+Alternates:wght@300;400&family=Roboto+Slab:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+.profile-section {
+  width: 100%;
+  padding: 40px 100px;
+}
+
+.profile-section .profile-head {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 34px;
+}
+
+.profile-section .profile-detail-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+  height: 300px;
+}
+
+.profile-section .profile-detail-container .profile-details {
+  border-left: 2px solid #010101;
+  padding-left: 20px;
+  width: 40%;
+}
+
+.profile-section .profile-detail-container .profile-details p {
+  font-family: "Roboto Slab", serif;
+  font-size: 24px;
+  color: #010101;
+  margin-top: 20px;
+}
+
+.profile-section .profile-detail-container .profile-pic-container {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.profile-section .profile-detail-container .profile-pic-container .pic-container {
+  width: 200px;
+  height: 200px;
+}
+
+.profile-section .profile-detail-container .profile-pic-container .pic-container img {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .profile-section {
+    padding: 30px 70px;
+  }
+  .profile-section .profile-head {
+    font-size: 26px;
+  }
+  .profile-section .profile-detail-container .profile-details {
+    width: 60%;
+  }
+  .profile-section .profile-detail-container .profile-details p {
+    font-size: 20px;
+  }
+  .profile-section .profile-detail-container .profile-pic-container {
+    width: 40%;
+  }
+  .profile-section .profile-detail-container .profile-pic-container .pic-container {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media only screen and (max-width: 625px) {
+  .profile-section {
+    padding: 30px 35px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .profile-section .profile-detail-container .profile-details {
+    padding-left: 10px;
+  }
+  .profile-section .profile-detail-container .profile-details p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .profile-section .profile-detail-container .profile-pic-container .pic-container {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .profile-section {
+    padding: 20px 15px;
+  }
+  .profile-section .profile-head {
+    font-size: 22px;
+  }
+  .profile-section .profile-detail-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 25px;
+    height: auto;
+  }
+  .profile-section .profile-detail-container .profile-details {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .profile-section .profile-detail-container .profile-details p {
+    font-size: 16px;
+    margin-top: 50px;
+  }
+  .profile-section .profile-detail-container .profile-pic-container {
+    width: 100%;
+    padding: 10px;
+  }
+  .profile-section .profile-detail-container .profile-pic-container .pic-container {
+    width: 100px;
+    height: 100%;
+  }
+}
+/*# sourceMappingURL=profile.css.map */

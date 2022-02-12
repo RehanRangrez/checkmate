@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Montserrat+Alternates:wght@300;400&family=Roboto+Slab:wght@300;400;500&display=swap");
+// font Variables
+$josefin: "Josefin Sans", sans-serif;
+$montserrat: "Montserrat Alternates", sans-serif;
+$roboto: "Roboto Slab", serif;
+
+// color variables
+$blue: #034ffd;
+$yellow: #ffc300;
+// $yellow: #ffe79a;
+$black: #010101;
+$white: #fdfdfd;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+body {
+  width: 100vw;
+  background-color: $yellow;
+  // background-image: url(/assets/images/pattern1.png);
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-blend-mode: overlay;
+}
+header {
+  width: 100%;
+  height: 10vh;
+  padding: 0px 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+  .logo {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      height: 65%;
+      margin-right: 5px;
+      margin-bottom: 10px;
+    }
+    .name {
+      font-family: $josefin;
+      font-size: 600;
+      font-size: 32px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    margin-top: 10px;
+    justify-content: center;
+    min-height: 80px;
+    .logo {
+      flex-direction: column;
+      img {
+        height: 55%;
+        margin-bottom: 3px;
+        margin-right: 0;
+      }
+      .name {
+        font-size: 22px;
+      }
+    }
+  }
+}

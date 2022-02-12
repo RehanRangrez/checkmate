@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Montserrat+Alternates:wght@300;400&family=Roboto+Slab:wght@300;400;500&display=swap");
+// font Variables
+$josefin: "Josefin Sans", sans-serif;
+$montserrat: "Montserrat Alternates", sans-serif;
+$roboto: "Roboto Slab", serif;
+
+// color variables
+$blue: #034ffd;
+$yellow: #ffc300;
+$black: #010101;
+$white: #fdfdfd;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*:focus {
+  outline: none;
+}
+
+.profile-section {
+  width: 100%;
+  padding: 40px 100px;
+  .profile-head {
+    font-family: $josefin;
+    font-size: 34px;
+  }
+  .profile-detail-container {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 50px;
+    height: 300px;
+    .profile-details {
+      border-left: 2px solid $black;
+      padding-left: 20px;
+      width: 40%;
+      p {
+        font-family: $roboto;
+        font-size: 24px;
+        color: $black;
+        margin-top: 20px;
+      }
+    }
+    .profile-pic-container {
+      width: 60%;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      .pic-container {
+        width: 200px;
+        height: 200px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .profile-section {
+    padding: 30px 70px;
+    .profile-head {
+      font-size: 26px;
+    }
+    .profile-detail-container {
+      .profile-details {
+        width: 60%;
+        p {
+          font-size: 20px;
+        }
+      }
+      .profile-pic-container {
+        width: 40%;
+        .pic-container {
+          width: 180px;
+          height: 180px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 625px) {
+  .profile-section {
+    padding: 30px 35px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .profile-section {
+    .profile-detail-container {
+      .profile-details {
+        padding-left: 10px;
+        p {
+          font-size: 16px;
+          margin-top: 10px;
+        }
+      }
+      .profile-pic-container {
+        .pic-container {
+          width: 150px;
+          height: 150px;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+@media only screen and (max-width: 426px){
+
+.profile-section{
+  padding: 20px 15px;
+  .profile-head{
+    font-size: 22px;
+  }
+  .profile-detail-container{
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    height: auto;
+    .profile-details{
+      width: 100%;
+      margin-top: 40px;
+      p{
+        font-size: 16px;
+        margin-top: 50px;
+      }
+    }
+    .profile-pic-container{
+      width: 100%;
+      padding: 10px;
+      .pic-container{
+        width: 100px;
+        height: 100%;
+      }
+    }
+  }
+}
+
+
+}
