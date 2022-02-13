@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&family=Montserrat+Alternates:wght@300;400&family=Roboto+Slab:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Montserrat+Alternates:wght@300;400&family=Roboto+Slab:wght@300;400;500&display=swap");
 // font Variables
 $josefin: "Josefin Sans", sans-serif;
 $montserrat: "Montserrat Alternates", sans-serif;
@@ -82,9 +82,33 @@ $lightbgforoptions:#F3F5F9;
     }
   }
 }
+.inner-log{
+  width: 100vw;
+  overflow: hidden;
+  padding: 40px 100px;
+  margin-bottom: 100px;
+  .inner-log-heading{
+    font-family: $josefin;
+    color: $black;
+    font-size: 34px;
+    margin-bottom: 20px;
+  }
+  .question{
+    font-family: $josefin;
+    font-size: 18px;
+    margin-top: 20px ;
+
+  }
+  .answer{
+    font-family: $josefin;
+    font-size: 16px;
+    color: $bluetext;
+    margin: 5px ;
+  }
+}
 
 @media only screen and (max-width: 768px) {
-  .logs-section {
+  .logs-section,.inner-log {
     padding: 30px 37px;
     .logs-head {
       font-size: 26px;
@@ -109,6 +133,17 @@ $lightbgforoptions:#F3F5F9;
       .log {
         margin: 10px;
       }
+    }
+  }
+  .inner-log{
+    padding: 10px 5px;
+    .inner-log-heading{
+      font-size: 22px;
+    }
+    .question{
+      font-size: 16px;
+    }.answer{
+      font-size: 14px;
     }
   }
 }
