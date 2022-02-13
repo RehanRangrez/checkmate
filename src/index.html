@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="nav.css" />
     <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="assessment.css" />
   </head>
   <body>
     <header>
@@ -38,7 +39,7 @@
       </ul>
     </nav>
 
-    <section class="home-section">
+    <section class="home-section" style="display: none">
       <div class="home-quote">
         <h2 class="quote-text">
           “What mental health needs <br />
@@ -51,6 +52,44 @@
         Assess yourself to keep a track of your mental weelbeing
       </h4>
       <a href="" class="start">Begin</a>
+    </section>
+
+    <!-- ******* -->
+    <section class="assessment">
+      <section class="assessment-intro" style="display: none;">
+        <h1 class="assessment-intro-head">Mood Assessment</h1>
+        <h2 class="assessment-intro-caption">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit,
+          dolore.
+        </h2>
+        <a href="" class="assessment-start-btn" onclick="return hideintro();"
+          >Start</a
+        >
+      </section>
+      <section class="assessment-mcq" style="display: none;">
+        <h2 class="question">
+          How has your appetite been over the last few weeks?
+        </h2>
+        <ul class="answer-list">
+          <li class="answer">I have a larger appetite than usual</li>
+          <li class="answer">I have a smaller appetite than usual</li>
+          <li class="answer">I haven’t noticed any changes</li>
+        </ul>
+        <span class="pulse-box">
+          <img src="/assets/images/mic.svg" alt="" />
+        </span>
+        <a href="" class="next-question">Next</a>
+      </section>
+      <section class="assessment-desc" style="display: block;">
+        <h2 class="question">
+          How has your appetite been over the last few weeks?
+        </h2>
+        <p class="desc-caption">Speak it out loud.</p>
+        <span class="pulse-box">
+          <img src="/assets/images/mic.svg" alt="" />
+        </span>
+        <a href="" class="next-question">Next</a>
+      </section>
     </section>
   </body>
 </html>

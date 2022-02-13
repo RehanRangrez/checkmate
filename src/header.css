@@ -12,7 +12,10 @@
 
 body {
   width: 100vw;
-  background-color: #ffffff;
+  background-image: url("/assets/images/assessmentimg blurred.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 header {
