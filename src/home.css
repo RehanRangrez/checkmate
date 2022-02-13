@@ -40,7 +40,7 @@
   font-family: "Montserrat Alternates", sans-serif;
   font-size: 12px;
   font-weight: 300;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .home-section .start {
@@ -83,6 +83,7 @@
   padding: 20px;
   width: 400px;
   border-radius: 10px;
+  max-height: 330px;
 }
 
 .home-section .slides-container .slide1 .img-container,
@@ -160,7 +161,8 @@
   .home-section .slides-container .slide1 .img-container img,
   .home-section .slides-container .slide2 .img-container img,
   .home-section .slides-container .slide3 .img-container img {
-    width: 160px;
+    width: 130px;
+    height: 150px;
   }
   .home-section .slides-container .slide1 .slides-text,
   .home-section .slides-container .slide2 .slides-text,

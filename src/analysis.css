@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&family=Montserrat+Alternates:wght@300;400&family=Roboto+Slab:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+.analysis {
+  width: 100vw;
+  padding: 40px 100px;
+}
+
+.analysis .analysis-head {
+  font-family: "Josefin Sans", sans-serif;
+  color: #010101;
+  font-size: 34px;
+}
+
+.analysis .analysis-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.analysis .analysis-container .analysis-box {
+  width: 300px;
+  height: 250px;
+  border: 2px solid #182a88;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .analysis {
+    padding: 40px;
+  }
+  .analysis .analysis-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .analysis .analysis-container .analysis-box {
+    margin: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .analysis {
+    padding-bottom: 80px;
+  }
+  .analysis .analysis-head {
+    font-size: 22px;
+  }
+  .analysis .analysis-container {
+    margin-top: 10px;
+  }
+  .analysis .analysis-container .analysis-box {
+    margin: 15px 0;
+  }
+}
+/*# sourceMappingURL=analysis.css.map */
